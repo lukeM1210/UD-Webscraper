@@ -18,7 +18,7 @@ def random_delay(start=1, end=2):
     time.sleep(random.uniform(start, end))
 
 # Path to your extracted Microsoft Edge driver executable
-edge_driver_path = r'C:\Users\lukem\Downloads\edgedriver_win64\msedgedriver.exe'
+edge_driver_path = r'' # Add your own path to web driver .exe
 
 # Initialize the Edge WebDriver with the correct Service object and options
 edge_options = Options()
@@ -53,11 +53,11 @@ try:
     email_field = driver.find_element(By.XPATH, "/html/body/div[1]/div/div[2]/div/div/div/div[2]/div/form/div[1]/label/div[2]/input")
     password_field = driver.find_element(By.XPATH, "/html/body/div[1]/div/div[2]/div/div/div/div[2]/div/form/div[2]/label/div[2]/input")
     
-    email_field.send_keys("lukemast22@gmail.com")
+    email_field.send_keys("") # Enter your own email
     print("Entered email")
     random_delay()
 
-    password_field.send_keys("Hockeyislife#12")
+    password_field.send_keys("") # Enter your own password
     print("Entered password")
     random_delay()
 
